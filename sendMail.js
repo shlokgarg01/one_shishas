@@ -18,7 +18,7 @@ const sendMail = async (req, res) => {
   transporter.sendMail({
     from: `"Shlok Garg" <shlok.garg01@gmail.com>`,
     to: "shlok.garg@1mg.com",
-    subject: "Test Subject by S.G.",
+    subject: "New Order",
     text: `NEW ORDER\nName: ${name}\nContact Number: ${contact}`
   }, (err, res) => {
     if (err) console.log("error", err)
