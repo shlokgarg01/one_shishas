@@ -17,12 +17,12 @@ const sendMail = async (req, res) => {
   console.log()
   transporter.sendMail({
     from: `"Shlok Garg" <shlok.garg01@gmail.com>`,
-    to: "shlok.garg@1mg.com",
+    to: "oneshishas@gmail.com",
     subject: "New Order",
     text: `NEW ORDER\nName: ${name}\nContact Number: ${contact}`
   }, (err, res) => {
     if (err) console.log("error", err)
-    else console.log("res - ", res)
+    else console.log("res - ", name, contact, res)
   })
 
   res.status(200).json({
